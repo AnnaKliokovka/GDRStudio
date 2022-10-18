@@ -8,7 +8,6 @@ public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager instance;
     public TextMeshProUGUI text;
-    public GameObject FinishMenu;
     public int FinalScore = 7;
     int score;
 
@@ -32,6 +31,6 @@ public class ScoreManager : MonoBehaviour
 
     private void LevelComplete()
     {
-        FinishMenu.SetActive(true);
+        Camera.main.GetComponent<MyMenu>().ShowFinish();
     }
 }

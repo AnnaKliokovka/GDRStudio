@@ -9,10 +9,4 @@ public class Restart : MonoBehaviour
    {
         SceneManager.LoadScene("SampleScene");
    }
-
-    public void Show()
-    {
-        Debug.Log("Shoooow");
-        gameObject.SetActive(true);
-    }
 }
